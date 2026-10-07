@@ -7,13 +7,15 @@ public class Clasa {
     List<Elev> elevi;
 
     public void adaugaElev(Elev elev) {
+        elevi.add(elev);
     }
 
     public void eliminaElev(Elev elev) {
+        elevi.remove(elev);
     }
 
     public int getTotalElevi() {
-        return 0;
+        return elevi.size();
     }
 
 }
